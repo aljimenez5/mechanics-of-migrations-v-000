@@ -25,6 +25,6 @@ sql = <<-SQL
 SQL
  
 ActiveRecord::Base.connection.execute(sql)
-
+ActiveRecord::Base.connection.execute("DROP TABLE IF EXISTS students")
 
 require_relative "../artist.rb"
